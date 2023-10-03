@@ -9,7 +9,7 @@ from langchain.requests import RequestsWrapper
 from langchain.agents.agent_toolkits.openapi import planner
 
 
-llm = OpenAI(temperature=0)
+llm = OpenAI(temperature=0, model_name="gpt-3.5-turbo")
 embeddings = OpenAIEmbeddings()
 user_query = "Use the search endpoint find my meeting with Max and summarize it"
 
